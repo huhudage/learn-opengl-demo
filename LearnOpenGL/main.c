@@ -11,10 +11,11 @@
 #include "HelloTriangle2.h"
 #include "ShadersUniform.h"
 #include "ShadersUniform2.h"
+#include "TexturesCombined.h"
 
 int main(int argc, const char * argv[]) {
     
-    int unit = 4;
+    int unit = 5;
     
     if (unit == 1 )
         testHelloTriangle();
@@ -24,6 +25,8 @@ int main(int argc, const char * argv[]) {
         testShadersUniform();
     else if (unit == 4)
         testShadersUniform2();
+    else if (unit == 5)
+        testTexturesCombined();
     else
         testHelloTriangle();
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9303FF3723BCD52E0058B143 /* TexturesCombined.c in Sources */ = {isa = PBXBuildFile; fileRef = 9303FF3623BCD52E0058B143 /* TexturesCombined.c */; };
 		930E58F623BB9A1600B6911A /* ShadersUniform2.c in Sources */ = {isa = PBXBuildFile; fileRef = 930E58F523BB9A1600B6911A /* ShadersUniform2.c */; };
 		930E58F923BB9A8F00B6911A /* HelloTriangle.c in Sources */ = {isa = PBXBuildFile; fileRef = 930E58F823BB9A8F00B6911A /* HelloTriangle.c */; };
 		9398273B2136CAE000A77478 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 9398273A2136CAE000A77478 /* main.c */; };
@@ -31,6 +32,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9303FF3023BCD44A0058B143 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stb_image.h; path = LearnOpenGL/3rd/stb_image.h; sourceTree = SOURCE_ROOT; };
+		9303FF3523BCD52E0058B143 /* TexturesCombined.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TexturesCombined.h; sourceTree = "<group>"; };
+		9303FF3623BCD52E0058B143 /* TexturesCombined.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = TexturesCombined.c; sourceTree = "<group>"; };
+		9303FF3923BCD6CB0058B143 /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
 		930E58F423BB9A1600B6911A /* ShadersUniform2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadersUniform2.h; sourceTree = "<group>"; };
 		930E58F523BB9A1600B6911A /* ShadersUniform2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ShadersUniform2.c; sourceTree = "<group>"; };
 		930E58F723BB9A8F00B6911A /* HelloTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelloTriangle.h; path = HelloTriangle/HelloTriangle.h; sourceTree = "<group>"; };
@@ -63,6 +68,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9303FF2F23BCD4390058B143 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				9303FF3023BCD44A0058B143 /* stb_image.h */,
+			);
+			name = 3rd;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		9303FF3423BCD50E0058B143 /* TexturesCombined */ = {
+			isa = PBXGroup;
+			children = (
+				9303FF3523BCD52E0058B143 /* TexturesCombined.h */,
+				9303FF3623BCD52E0058B143 /* TexturesCombined.c */,
+			);
+			path = TexturesCombined;
+			sourceTree = "<group>";
+		};
+		9303FF3823BCD6BE0058B143 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				934801ED23BCDE37001E33BD /* textures */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 		930E58F323BB99DD00B6911A /* ShadersUniform2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +101,14 @@
 				930E58F523BB9A1600B6911A /* ShadersUniform2.c */,
 			);
 			path = ShadersUniform2;
+			sourceTree = "<group>";
+		};
+		934801ED23BCDE37001E33BD /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				9303FF3923BCD6CB0058B143 /* container.jpg */,
+			);
+			path = textures;
 			sourceTree = "<group>";
 		};
 		9398272E2136CAE000A77478 = {
@@ -92,14 +131,17 @@
 		939827392136CAE000A77478 /* LearnOpenGL */ = {
 			isa = PBXGroup;
 			children = (
-				9398275C2136DAF800A77478 /* HelloTriangle */,
-				939827522136CFB100A77478 /* HelloTriangle2 */,
-				9398275A2136DA4600A77478 /* ShadersUniform */,
-				930E58F323BB99DD00B6911A /* ShadersUniform2 */,
 				9398273A2136CAE000A77478 /* main.c */,
 				939827562136D27A00A77478 /* KeyCallback.h */,
 				939827572136D27A00A77478 /* KeyCallback.c */,
 				939827592136D3CF00A77478 /* Common.h */,
+				9303FF2F23BCD4390058B143 /* 3rd */,
+				9398275C2136DAF800A77478 /* HelloTriangle */,
+				939827522136CFB100A77478 /* HelloTriangle2 */,
+				9398275A2136DA4600A77478 /* ShadersUniform */,
+				930E58F323BB99DD00B6911A /* ShadersUniform2 */,
+				9303FF3423BCD50E0058B143 /* TexturesCombined */,
+				9303FF3823BCD6BE0058B143 /* resources */,
 			);
 			path = LearnOpenGL;
 			sourceTree = "<group>";
@@ -198,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				930E58F623BB9A1600B6911A /* ShadersUniform2.c in Sources */,
+				9303FF3723BCD52E0058B143 /* TexturesCombined.c in Sources */,
 				939827582136D27A00A77478 /* KeyCallback.c in Sources */,
 				939827552136CFCC00A77478 /* HelloTriangle2.c in Sources */,
 				93F3D08223BB8487007C4E28 /* ShadersUniform.c in Sources */,
