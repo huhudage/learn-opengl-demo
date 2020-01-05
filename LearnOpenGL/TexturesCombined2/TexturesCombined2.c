@@ -1,15 +1,16 @@
 //
-//  TexturesCombined.c
+//  TexturesCombined2.c
 //  LearnOpenGL
 //
-//  Created by huhu on 2020/1/1.
+//  Created by huhu on 2020/1/5.
 //  Copyright © 2020 huhu. All rights reserved.
 //
 
-#define GLFW_INCLUDE_GLCOREARB
+
+#define STB_IMAGE_IMPLEMENTATION
 
 #include "stb_image.h"
-#include "TexturesCombined.h"
+#include "TexturesCombined2.h"
 #include "Common.h"
 
 // Shaders
@@ -30,13 +31,14 @@ static const char *fragmentShaderSource = "#version 330 core\n"
 "out vec4 FragColor;\n"
 "in vec3 ourColor;\n"
 "in vec2 TexCoord;\n"
-"uniform sampler2D ourTexture;\n"
+"uniform sampler2D texture1;\n"
+"uniform sampler2D texture2;\n"
 "void main()\n"
 "{\n"
-"   FragColor = texture(ourTexture, TexCoord);\n"
+"   FragColor = mix(texture(texture1, TexCoord), texture(texture2, TexCoord), 0.2);\n"
 "}\n\0";
 
-void testTexturesCombined() {
+void testTexturesCombined2() {
     if (!glfwInit()) {
         return;
     }
@@ -145,9 +147,9 @@ void testTexturesCombined() {
     glBindVertexArray(0);
     
     // load and create shader
-    unsigned int texture;
-    glGenTextures(1, &texture);
-    glBindTexture(GL_TEXTURE_2D, texture);
+    unsigned int texture1, texture2;
+    glGenTextures(1, &texture1);
+    glBindTexture(GL_TEXTURE_2D, texture1);
     
     // set the texture wrapping parameters
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
@@ -174,7 +176,35 @@ void testTexturesCombined() {
     // release image
     stbi_image_free(data);
     
+    glGenTextures(1, &texture2);
+    glBindTexture(GL_TEXTURE_2D, texture2);
+    
+    // set the texture wrapping parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    
+    // set the texture filtering parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    
+    data = stbi_load("/Users/huhu/Work/Projects/Other/learn-opengl-demo/LearnOpenGL/resources/textures/awesomeface.png", &w, &h, &nrChannels, 0);
+    if (data)
+    {
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, w, h, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
+        glGenerateMipmap(GL_TEXTURE_2D);
+    }
+    else
+    {
+        // load failed
+        // todo
+    }
+    
+    // release image
+    stbi_image_free(data);
+    
     glUseProgram(shaderProgram);
+    glUniform1i(glGetUniformLocation(shaderProgram, "texture1"), 0);
+    glUniform1i(glGetUniformLocation(shaderProgram, "texture2"), 1);
     
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
@@ -182,7 +212,11 @@ void testTexturesCombined() {
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
         
-        glBindTexture(GL_TEXTURE_2D, texture);
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, texture1);
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, texture2);
+        
         glBindVertexArray(VAO);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
         glBindVertexArray(0);

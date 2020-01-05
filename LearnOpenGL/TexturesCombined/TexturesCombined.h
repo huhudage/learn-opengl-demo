@@ -9,6 +9,8 @@
 #ifndef TexturesCombined_h
 #define TexturesCombined_h
 
+#define STB_IMAGE_IMPLEMENTATION
+
 void testTexturesCombined(void);
 
 #endif /* TexturesCombined_h */

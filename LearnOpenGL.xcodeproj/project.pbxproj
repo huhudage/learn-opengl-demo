@@ -10,6 +10,7 @@
 		9303FF3723BCD52E0058B143 /* TexturesCombined.c in Sources */ = {isa = PBXBuildFile; fileRef = 9303FF3623BCD52E0058B143 /* TexturesCombined.c */; };
 		930E58F623BB9A1600B6911A /* ShadersUniform2.c in Sources */ = {isa = PBXBuildFile; fileRef = 930E58F523BB9A1600B6911A /* ShadersUniform2.c */; };
 		930E58F923BB9A8F00B6911A /* HelloTriangle.c in Sources */ = {isa = PBXBuildFile; fileRef = 930E58F823BB9A8F00B6911A /* HelloTriangle.c */; };
+		934801F323C224C8001E33BD /* TexturesCombined2.c in Sources */ = {isa = PBXBuildFile; fileRef = 934801F223C224C8001E33BD /* TexturesCombined2.c */; };
 		9398273B2136CAE000A77478 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 9398273A2136CAE000A77478 /* main.c */; };
 		939827492136CBAE00A77478 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939827482136CBAE00A77478 /* OpenGL.framework */; };
 		9398274B2136CBB400A77478 /* libGLEW.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9398274A2136CBB300A77478 /* libGLEW.dylib */; };
@@ -40,6 +41,9 @@
 		930E58F523BB9A1600B6911A /* ShadersUniform2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ShadersUniform2.c; sourceTree = "<group>"; };
 		930E58F723BB9A8F00B6911A /* HelloTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelloTriangle.h; path = HelloTriangle/HelloTriangle.h; sourceTree = "<group>"; };
 		930E58F823BB9A8F00B6911A /* HelloTriangle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HelloTriangle.c; path = HelloTriangle/HelloTriangle.c; sourceTree = "<group>"; };
+		934801EF23C2232A001E33BD /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
+		934801F123C224C8001E33BD /* TexturesCombined2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TexturesCombined2.h; sourceTree = "<group>"; };
+		934801F223C224C8001E33BD /* TexturesCombined2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = TexturesCombined2.c; sourceTree = "<group>"; };
 		939827372136CAE000A77478 /* LearnOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearnOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
 		9398273A2136CAE000A77478 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		939827482136CBAE00A77478 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -106,9 +110,19 @@
 		934801ED23BCDE37001E33BD /* textures */ = {
 			isa = PBXGroup;
 			children = (
+				934801EF23C2232A001E33BD /* awesomeface.png */,
 				9303FF3923BCD6CB0058B143 /* container.jpg */,
 			);
 			path = textures;
+			sourceTree = "<group>";
+		};
+		934801F023C224A1001E33BD /* TexturesCombined2 */ = {
+			isa = PBXGroup;
+			children = (
+				934801F123C224C8001E33BD /* TexturesCombined2.h */,
+				934801F223C224C8001E33BD /* TexturesCombined2.c */,
+			);
+			path = TexturesCombined2;
 			sourceTree = "<group>";
 		};
 		9398272E2136CAE000A77478 = {
@@ -141,6 +155,7 @@
 				9398275A2136DA4600A77478 /* ShadersUniform */,
 				930E58F323BB99DD00B6911A /* ShadersUniform2 */,
 				9303FF3423BCD50E0058B143 /* TexturesCombined */,
+				934801F023C224A1001E33BD /* TexturesCombined2 */,
 				9303FF3823BCD6BE0058B143 /* resources */,
 			);
 			path = LearnOpenGL;
@@ -242,6 +257,7 @@
 				930E58F623BB9A1600B6911A /* ShadersUniform2.c in Sources */,
 				9303FF3723BCD52E0058B143 /* TexturesCombined.c in Sources */,
 				939827582136D27A00A77478 /* KeyCallback.c in Sources */,
+				934801F323C224C8001E33BD /* TexturesCombined2.c in Sources */,
 				939827552136CFCC00A77478 /* HelloTriangle2.c in Sources */,
 				93F3D08223BB8487007C4E28 /* ShadersUniform.c in Sources */,
 				930E58F923BB9A8F00B6911A /* HelloTriangle.c in Sources */,
