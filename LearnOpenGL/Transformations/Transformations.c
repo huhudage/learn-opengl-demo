@@ -1,16 +1,16 @@
 //
-//  TexturesCombined2.c
+//  Transformations.c
 //  LearnOpenGL
 //
-//  Created by huhu on 2020/1/5.
+//  Created by huhu on 2020/1/7.
 //  Copyright © 2020 huhu. All rights reserved.
 //
 
+
 #define GLFW_INCLUDE_GLCOREARB
-#define STB_IMAGE_IMPLEMENTATION
 
 #include "stb_image.h"
-#include "TexturesCombined2.h"
+#include "Transformations.h"
 #include "Common.h"
 
 // Shaders
@@ -38,7 +38,7 @@ static const char *fragmentShaderSource = "#version 330 core\n"
 "   FragColor = mix(texture(texture1, TexCoord), texture(texture2, TexCoord), 0.2);\n"
 "}\n\0";
 
-void testTexturesCombined2() {
+void testTransformations() {
     if (!glfwInit()) {
         return;
     }
@@ -230,4 +230,5 @@ void testTexturesCombined2() {
     
     glfwTerminate();
 }
+
 

@@ -11,6 +11,7 @@
 		930E58F623BB9A1600B6911A /* ShadersUniform2.c in Sources */ = {isa = PBXBuildFile; fileRef = 930E58F523BB9A1600B6911A /* ShadersUniform2.c */; };
 		930E58F923BB9A8F00B6911A /* HelloTriangle.c in Sources */ = {isa = PBXBuildFile; fileRef = 930E58F823BB9A8F00B6911A /* HelloTriangle.c */; };
 		934801F323C224C8001E33BD /* TexturesCombined2.c in Sources */ = {isa = PBXBuildFile; fileRef = 934801F223C224C8001E33BD /* TexturesCombined2.c */; };
+		934801FB23C55D17001E33BD /* Transformations.c in Sources */ = {isa = PBXBuildFile; fileRef = 934801F923C55D17001E33BD /* Transformations.c */; };
 		9398273B2136CAE000A77478 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 9398273A2136CAE000A77478 /* main.c */; };
 		939827492136CBAE00A77478 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939827482136CBAE00A77478 /* OpenGL.framework */; };
 		9398274B2136CBB400A77478 /* libGLEW.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9398274A2136CBB300A77478 /* libGLEW.dylib */; };
@@ -44,6 +45,8 @@
 		934801EF23C2232A001E33BD /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
 		934801F123C224C8001E33BD /* TexturesCombined2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TexturesCombined2.h; sourceTree = "<group>"; };
 		934801F223C224C8001E33BD /* TexturesCombined2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = TexturesCombined2.c; sourceTree = "<group>"; };
+		934801F923C55D17001E33BD /* Transformations.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Transformations.c; sourceTree = "<group>"; };
+		934801FA23C55D17001E33BD /* Transformations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transformations.h; sourceTree = "<group>"; };
 		939827372136CAE000A77478 /* LearnOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearnOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
 		9398273A2136CAE000A77478 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		939827482136CBAE00A77478 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -125,6 +128,15 @@
 			path = TexturesCombined2;
 			sourceTree = "<group>";
 		};
+		934801F523C4D764001E33BD /* Transformations */ = {
+			isa = PBXGroup;
+			children = (
+				934801FA23C55D17001E33BD /* Transformations.h */,
+				934801F923C55D17001E33BD /* Transformations.c */,
+			);
+			path = Transformations;
+			sourceTree = "<group>";
+		};
 		9398272E2136CAE000A77478 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +168,7 @@
 				930E58F323BB99DD00B6911A /* ShadersUniform2 */,
 				9303FF3423BCD50E0058B143 /* TexturesCombined */,
 				934801F023C224A1001E33BD /* TexturesCombined2 */,
+				934801F523C4D764001E33BD /* Transformations */,
 				9303FF3823BCD6BE0058B143 /* resources */,
 			);
 			path = LearnOpenGL;
@@ -254,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934801FB23C55D17001E33BD /* Transformations.c in Sources */,
 				930E58F623BB9A1600B6911A /* ShadersUniform2.c in Sources */,
 				9303FF3723BCD52E0058B143 /* TexturesCombined.c in Sources */,
 				939827582136D27A00A77478 /* KeyCallback.c in Sources */,

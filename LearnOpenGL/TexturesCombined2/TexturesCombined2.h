@@ -9,8 +9,6 @@
 #ifndef TexturesCombined2_h
 #define TexturesCombined2_h
 
-#define GLFW_INCLUDE_GLCOREARB
-
 void testTexturesCombined2(void);
 
 #endif /* TexturesCombined2_h */
