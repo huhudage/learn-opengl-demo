@@ -12,6 +12,9 @@
 #include "stb_image.h"
 #include "Transformations.h"
 #include "Common.h"
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 // Shaders
 static const char *vertexShaderSource ="#version 330 core\n"
@@ -20,11 +23,12 @@ static const char *vertexShaderSource ="#version 330 core\n"
 "layout (location = 2) in vec2 aTexCoord;\n"
 "out vec3 ourColor;\n"
 "out vec2 TexCoord;\n"
+"uniform mat4 transform;\n"
 "void main()\n"
 "{\n"
-"   gl_Position = vec4(aPos, 1.0);\n"
+"   gl_Position = transform * vec4(aPos, 1.0);\n"
 "   ourColor = aColor;\n"
-"   TexCoord = aTexCoord;\n"
+"   TexCoord = vec2(aTexCoord.x, 1.0 - aTexCoord.y);\n"
 "}\0";
 
 static const char *fragmentShaderSource = "#version 330 core\n"
@@ -205,6 +209,13 @@ void testTransformations() {
     glUseProgram(shaderProgram);
     glUniform1i(glGetUniformLocation(shaderProgram, "texture1"), 0);
     glUniform1i(glGetUniformLocation(shaderProgram, "texture2"), 1);
+    
+    glm::mat4 trans;
+    trans = glm::rotate(trans, glm::radians(90.0f), glm::vec3(0.0, 0.0, 1.0));
+    trans = glm::scale(trans, glm::vec3(0.5, 0.5, 0.5));
+    
+    unsigned int transformLoc = glGetUniformLocation(shaderProgram, "transform");
+    glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
     
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();

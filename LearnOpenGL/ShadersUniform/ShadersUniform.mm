@@ -10,6 +10,7 @@
 
 #include "ShadersUniform.h"
 #include "Common.h"
+#import <cmath>
 
 // Shaders
 static const GLchar* vertexShaderSource = "#version 330 core\n"

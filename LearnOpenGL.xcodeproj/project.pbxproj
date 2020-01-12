@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9303FF3723BCD52E0058B143 /* TexturesCombined.c in Sources */ = {isa = PBXBuildFile; fileRef = 9303FF3623BCD52E0058B143 /* TexturesCombined.c */; };
-		930E58F623BB9A1600B6911A /* ShadersUniform2.c in Sources */ = {isa = PBXBuildFile; fileRef = 930E58F523BB9A1600B6911A /* ShadersUniform2.c */; };
-		930E58F923BB9A8F00B6911A /* HelloTriangle.c in Sources */ = {isa = PBXBuildFile; fileRef = 930E58F823BB9A8F00B6911A /* HelloTriangle.c */; };
-		934801F323C224C8001E33BD /* TexturesCombined2.c in Sources */ = {isa = PBXBuildFile; fileRef = 934801F223C224C8001E33BD /* TexturesCombined2.c */; };
-		934801FB23C55D17001E33BD /* Transformations.c in Sources */ = {isa = PBXBuildFile; fileRef = 934801F923C55D17001E33BD /* Transformations.c */; };
-		9398273B2136CAE000A77478 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 9398273A2136CAE000A77478 /* main.c */; };
+		9303FF3723BCD52E0058B143 /* TexturesCombined.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9303FF3623BCD52E0058B143 /* TexturesCombined.mm */; };
+		930E58F623BB9A1600B6911A /* ShadersUniform2.mm in Sources */ = {isa = PBXBuildFile; fileRef = 930E58F523BB9A1600B6911A /* ShadersUniform2.mm */; };
+		930E58F923BB9A8F00B6911A /* HelloTriangle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 930E58F823BB9A8F00B6911A /* HelloTriangle.mm */; };
+		934801F323C224C8001E33BD /* TexturesCombined2.mm in Sources */ = {isa = PBXBuildFile; fileRef = 934801F223C224C8001E33BD /* TexturesCombined2.mm */; };
+		934801FB23C55D17001E33BD /* Transformations.mm in Sources */ = {isa = PBXBuildFile; fileRef = 934801F923C55D17001E33BD /* Transformations.mm */; };
+		9398273B2136CAE000A77478 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9398273A2136CAE000A77478 /* main.mm */; };
 		939827492136CBAE00A77478 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939827482136CBAE00A77478 /* OpenGL.framework */; };
 		9398274B2136CBB400A77478 /* libGLEW.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9398274A2136CBB300A77478 /* libGLEW.dylib */; };
 		9398274D2136CBBA00A77478 /* libglfw.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9398274C2136CBBA00A77478 /* libglfw.3.dylib */; };
-		939827552136CFCC00A77478 /* HelloTriangle2.c in Sources */ = {isa = PBXBuildFile; fileRef = 939827542136CFCC00A77478 /* HelloTriangle2.c */; };
-		939827582136D27A00A77478 /* KeyCallback.c in Sources */ = {isa = PBXBuildFile; fileRef = 939827572136D27A00A77478 /* KeyCallback.c */; };
-		93F3D08223BB8487007C4E28 /* ShadersUniform.c in Sources */ = {isa = PBXBuildFile; fileRef = 93F3D08123BB8487007C4E28 /* ShadersUniform.c */; };
+		939827552136CFCC00A77478 /* HelloTriangle2.mm in Sources */ = {isa = PBXBuildFile; fileRef = 939827542136CFCC00A77478 /* HelloTriangle2.mm */; };
+		939827582136D27A00A77478 /* KeyCallback.mm in Sources */ = {isa = PBXBuildFile; fileRef = 939827572136D27A00A77478 /* KeyCallback.mm */; };
+		93F3D08223BB8487007C4E28 /* ShadersUniform.mm in Sources */ = {isa = PBXBuildFile; fileRef = 93F3D08123BB8487007C4E28 /* ShadersUniform.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,29 +36,29 @@
 /* Begin PBXFileReference section */
 		9303FF3023BCD44A0058B143 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stb_image.h; path = LearnOpenGL/3rd/stb_image.h; sourceTree = SOURCE_ROOT; };
 		9303FF3523BCD52E0058B143 /* TexturesCombined.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TexturesCombined.h; sourceTree = "<group>"; };
-		9303FF3623BCD52E0058B143 /* TexturesCombined.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = TexturesCombined.c; sourceTree = "<group>"; };
+		9303FF3623BCD52E0058B143 /* TexturesCombined.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TexturesCombined.mm; sourceTree = "<group>"; };
 		9303FF3923BCD6CB0058B143 /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
 		930E58F423BB9A1600B6911A /* ShadersUniform2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadersUniform2.h; sourceTree = "<group>"; };
-		930E58F523BB9A1600B6911A /* ShadersUniform2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ShadersUniform2.c; sourceTree = "<group>"; };
+		930E58F523BB9A1600B6911A /* ShadersUniform2.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ShadersUniform2.mm; sourceTree = "<group>"; };
 		930E58F723BB9A8F00B6911A /* HelloTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelloTriangle.h; path = HelloTriangle/HelloTriangle.h; sourceTree = "<group>"; };
-		930E58F823BB9A8F00B6911A /* HelloTriangle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HelloTriangle.c; path = HelloTriangle/HelloTriangle.c; sourceTree = "<group>"; };
+		930E58F823BB9A8F00B6911A /* HelloTriangle.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = HelloTriangle.mm; path = HelloTriangle/HelloTriangle.mm; sourceTree = "<group>"; };
 		934801EF23C2232A001E33BD /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
 		934801F123C224C8001E33BD /* TexturesCombined2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TexturesCombined2.h; sourceTree = "<group>"; };
-		934801F223C224C8001E33BD /* TexturesCombined2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = TexturesCombined2.c; sourceTree = "<group>"; };
-		934801F923C55D17001E33BD /* Transformations.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Transformations.c; sourceTree = "<group>"; };
+		934801F223C224C8001E33BD /* TexturesCombined2.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TexturesCombined2.mm; sourceTree = "<group>"; };
+		934801F923C55D17001E33BD /* Transformations.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Transformations.mm; sourceTree = "<group>"; };
 		934801FA23C55D17001E33BD /* Transformations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transformations.h; sourceTree = "<group>"; };
 		939827372136CAE000A77478 /* LearnOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearnOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
-		9398273A2136CAE000A77478 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		9398273A2136CAE000A77478 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		939827482136CBAE00A77478 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		9398274A2136CBB300A77478 /* libGLEW.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.dylib; path = ../../../../../../../usr/local/lib/libGLEW.dylib; sourceTree = "<group>"; };
 		9398274C2136CBBA00A77478 /* libglfw.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.dylib; path = ../../../../../../../usr/local/lib/libglfw.3.dylib; sourceTree = "<group>"; };
 		939827532136CFCC00A77478 /* HelloTriangle2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloTriangle2.h; sourceTree = "<group>"; };
-		939827542136CFCC00A77478 /* HelloTriangle2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = HelloTriangle2.c; sourceTree = "<group>"; };
+		939827542136CFCC00A77478 /* HelloTriangle2.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloTriangle2.mm; sourceTree = "<group>"; };
 		939827562136D27A00A77478 /* KeyCallback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyCallback.h; sourceTree = "<group>"; };
-		939827572136D27A00A77478 /* KeyCallback.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = KeyCallback.c; sourceTree = "<group>"; };
+		939827572136D27A00A77478 /* KeyCallback.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = KeyCallback.mm; sourceTree = "<group>"; };
 		939827592136D3CF00A77478 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		93F3D08023BB8473007C4E28 /* ShadersUniform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadersUniform.h; sourceTree = "<group>"; };
-		93F3D08123BB8487007C4E28 /* ShadersUniform.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ShadersUniform.c; sourceTree = "<group>"; };
+		93F3D08123BB8487007C4E28 /* ShadersUniform.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ShadersUniform.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				9303FF3523BCD52E0058B143 /* TexturesCombined.h */,
-				9303FF3623BCD52E0058B143 /* TexturesCombined.c */,
+				9303FF3623BCD52E0058B143 /* TexturesCombined.mm */,
 			);
 			path = TexturesCombined;
 			sourceTree = "<group>";
@@ -105,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				930E58F423BB9A1600B6911A /* ShadersUniform2.h */,
-				930E58F523BB9A1600B6911A /* ShadersUniform2.c */,
+				930E58F523BB9A1600B6911A /* ShadersUniform2.mm */,
 			);
 			path = ShadersUniform2;
 			sourceTree = "<group>";
@@ -123,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				934801F123C224C8001E33BD /* TexturesCombined2.h */,
-				934801F223C224C8001E33BD /* TexturesCombined2.c */,
+				934801F223C224C8001E33BD /* TexturesCombined2.mm */,
 			);
 			path = TexturesCombined2;
 			sourceTree = "<group>";
@@ -132,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				934801FA23C55D17001E33BD /* Transformations.h */,
-				934801F923C55D17001E33BD /* Transformations.c */,
+				934801F923C55D17001E33BD /* Transformations.mm */,
 			);
 			path = Transformations;
 			sourceTree = "<group>";
@@ -157,9 +157,9 @@
 		939827392136CAE000A77478 /* LearnOpenGL */ = {
 			isa = PBXGroup;
 			children = (
-				9398273A2136CAE000A77478 /* main.c */,
+				9398273A2136CAE000A77478 /* main.mm */,
 				939827562136D27A00A77478 /* KeyCallback.h */,
-				939827572136D27A00A77478 /* KeyCallback.c */,
+				939827572136D27A00A77478 /* KeyCallback.mm */,
 				939827592136D3CF00A77478 /* Common.h */,
 				9303FF2F23BCD4390058B143 /* 3rd */,
 				9398275C2136DAF800A77478 /* HelloTriangle */,
@@ -188,7 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				939827532136CFCC00A77478 /* HelloTriangle2.h */,
-				939827542136CFCC00A77478 /* HelloTriangle2.c */,
+				939827542136CFCC00A77478 /* HelloTriangle2.mm */,
 			);
 			path = HelloTriangle2;
 			sourceTree = "<group>";
@@ -197,7 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				93F3D08023BB8473007C4E28 /* ShadersUniform.h */,
-				93F3D08123BB8487007C4E28 /* ShadersUniform.c */,
+				93F3D08123BB8487007C4E28 /* ShadersUniform.mm */,
 			);
 			path = ShadersUniform;
 			sourceTree = "<group>";
@@ -206,7 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				930E58F723BB9A8F00B6911A /* HelloTriangle.h */,
-				930E58F823BB9A8F00B6911A /* HelloTriangle.c */,
+				930E58F823BB9A8F00B6911A /* HelloTriangle.mm */,
 			);
 			name = HelloTriangle;
 			sourceTree = "<group>";
@@ -267,15 +267,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				934801FB23C55D17001E33BD /* Transformations.c in Sources */,
-				930E58F623BB9A1600B6911A /* ShadersUniform2.c in Sources */,
-				9303FF3723BCD52E0058B143 /* TexturesCombined.c in Sources */,
-				939827582136D27A00A77478 /* KeyCallback.c in Sources */,
-				934801F323C224C8001E33BD /* TexturesCombined2.c in Sources */,
-				939827552136CFCC00A77478 /* HelloTriangle2.c in Sources */,
-				93F3D08223BB8487007C4E28 /* ShadersUniform.c in Sources */,
-				930E58F923BB9A8F00B6911A /* HelloTriangle.c in Sources */,
-				9398273B2136CAE000A77478 /* main.c in Sources */,
+				934801FB23C55D17001E33BD /* Transformations.mm in Sources */,
+				930E58F623BB9A1600B6911A /* ShadersUniform2.mm in Sources */,
+				9303FF3723BCD52E0058B143 /* TexturesCombined.mm in Sources */,
+				939827582136D27A00A77478 /* KeyCallback.mm in Sources */,
+				934801F323C224C8001E33BD /* TexturesCombined2.mm in Sources */,
+				939827552136CFCC00A77478 /* HelloTriangle2.mm in Sources */,
+				93F3D08223BB8487007C4E28 /* ShadersUniform.mm in Sources */,
+				930E58F923BB9A8F00B6911A /* HelloTriangle.mm in Sources */,
+				9398273B2136CAE000A77478 /* main.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +394,8 @@
 		9398273F2136CAE000A77478 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
@@ -407,6 +409,8 @@
 		939827402136CAE000A77478 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
